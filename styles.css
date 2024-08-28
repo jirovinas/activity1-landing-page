@@ -1,0 +1,265 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+/* Navigation Bar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(135deg, #232526 0%, #414345 100%);
+    padding: 25px;
+    animation: fadeInDown 1s ease-in-out;
+}
+
+nav .logo a {
+    color: white;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #06F3DD;
+    border-radius: 4px;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background: linear-gradient(135deg, #373B44 0%, #4286f4 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    animation: slideInLeft 1.5s ease-in-out;
+}
+
+.hero-content p {
+    font-size: 1.25rem;
+    margin-bottom: 30px;
+    animation: slideInRight 1.5s ease-in-out;
+}
+
+.hero-content button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #ffffff;
+    background-color: rgb(0, 0, 0);
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    animation: fadeInUp 2s ease-in-out;
+    border-radius: 15px;
+}
+
+.hero-content button:hover {
+    background-color: #06F3DD;
+}
+
+/* About Section */
+.about {
+    height: 100vh;
+    background: linear-gradient(135deg, #373B44 0%, #4286f4 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.about-content {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 100px;
+    padding-left: 150px;
+    animation: fadeInUp 2s ease-in-out;
+}
+
+/* Heading inside About Section */
+.about-content h2 {
+    font-size: 3rem; /* Adjust size as needed */
+    margin: 0;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for readability */
+    border-radius: 8px;
+}
+
+/* Text Content */
+.about-content p {
+    font-size: 2rem;
+    line-height: 1.6;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for better readability */
+    padding-left: 1000px;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 20px;
+    max-width: 90%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Benefits Section */
+.benefits {
+    background: linear-gradient(135deg, #373B44 0%, #4286f4 100%);
+    padding: 15px;
+    text-align: center;
+    animation: fadeInUp 2s ease-in-out;
+}
+
+.benefits h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    animation: fadeInDown 1.5s ease-in-out;
+}
+
+.benefit-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.benefit-item {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: 48%;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+    text-align: left;
+    animation: zoomIn 1.5s ease-in-out;
+}
+
+.benefit-item:hover {
+    background-color: #e0e0e0;
+    border-color: #ccc;
+}
+
+.benefit-item img {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.benefit-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.benefit-content {
+    display: none;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-top: 10px;
+}
+
+/* Footer */
+.copyright {
+    font-size: 18px;
+    width: 100%;
+    text-align: center;
+    background: linear-gradient(135deg, #232526 0%, #414345 100%);
+    font-weight: 300;
+    padding: 1px;
+}
+
+.copyright span {
+    color: #ff004f;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
